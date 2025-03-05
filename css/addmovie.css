@@ -1,0 +1,84 @@
+/* Reset and Box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #020d18;
+  --color-secondary: #155492;
+  --color-logo-first :#FF2300;
+  --color-logo-second: #0066CC;
+  --font-family: 'Poppins', sans-serif;
+  --transition-speed: 0.3s;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+  background-color: #fff;
+  overflow-x: hidden;
+  color:rgb(255, 255, 255)
+}
+/* Form Section Styling */
+h2{
+    padding: 2rem;
+    font-size: 2rem;
+    color: var(--color-secondary);
+    text-align: center;
+    margin-bottom: 20px;
+}
+form {
+    max-width: 600px;
+    background-color: rgba(64, 41, 194, 0.1);
+    padding: 2rem;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  form h2 {
+    font-size: 2rem;
+    color: var(--color-secondary);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  form label {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 5px;
+    display: block;
+  }
+  form input[type="text"],
+  form input[type="date"],
+  form input[type="number"],
+  form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-secondary);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(85, 84, 84);
+    font-size: 1rem;
+  }
+  form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  form button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+  }
+  form button:hover {
+    background-color: var(--color-primary);
+  }

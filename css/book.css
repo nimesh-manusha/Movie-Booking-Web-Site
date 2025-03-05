@@ -1,0 +1,208 @@
+/* Reset and Box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #020d18;
+  --color-secondary: #155492;
+  --color-logo-first: #FF2300;
+  --color-logo-second: #0066CC;
+  --font-family: 'Poppins', sans-serif;
+  --transition-speed: 0.3s;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+  background-color: var(--color-primary);
+  overflow-x: hidden;
+  color:rgb(255, 255, 255);
+  
+}
+
+.main-header {
+  padding: 20px 0;
+  background: rgba(255, 255, 255, 1);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.logo  {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo .SAV {
+  color :var(--color-logo-second)
+}
+
+.logo .best {
+  color: var(--color-logo-first);
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-header ul {
+  display: flex;
+}
+
+.main-header ul li {
+  margin-left: 20px;
+}
+
+.main-header ul li a {
+  font-size: 16px;
+}
+
+.main-header ul li a:hover {
+  color: rgb(117, 34, 34);
+}
+
+
+
+
+.message {
+  font-size: 1.1rem;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 600px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.message.error {
+  color: #ff4d4d; 
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 1px solid #ff4d4d;
+}
+
+.message.success {
+  color: #4CAF50; 
+  background-color: rgba(76, 175, 80, 0.1);
+  border: 1px solid #4CAF50;
+}
+
+.movie-details {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.movie-details img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.movie-details h2 {
+  font-size: 2rem;
+  color: var(--color-logo-second);
+  margin-bottom: 20px;
+  padding-bottom: 1rem;
+}
+
+
+/* Booking Form Styling */
+h2 {
+  font-size: 2rem;
+  color: var(--color-logo-second);
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-top: 15px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--color-secondary);
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  background-color: var(--color-secondary);
+  color: #fff;
+  padding: 15px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+button:hover {
+  background-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+p {
+  font-size: 1rem;
+  color: var(--color-secondary);
+}
+.avaSeats{
+  text-align: center;
+  padding: 20px;
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--color-logo-first);
+}
+
+img {
+  padding: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#totalPrice {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+

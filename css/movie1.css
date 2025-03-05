@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+    --color-primary: #020d18;
+    --color-secondary: #155492;
+    --color-logo-first: #FF2300;
+    --color-logo-second: #0066CC;
+    --color-white: #FFFFFF;
+    --font-family: 'Poppins', sans-serif;
+    --transition-speed: 0.3s;
+  }
+  body {
+    font-family: var(--font-family);
+    font-size: 16px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    overflow-x: hidden;
+  }
+  /* Header */
+.main-header {
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 1);
+  }
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .logo .SAV {
+    color: var(--color-logo-second);
+  }
+  .logo .best {
+    color: var(--color-logo-first);
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .main-header ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .main-header ul li {
+    margin-left: 20px;
+  }
+  
+  .main-header ul li a {
+    font-size: 16px;
+  }
+  
+  .main-header ul li a:hover {
+    color: rgb(117, 34, 34);
+  }
+
+  /* Movie Details Section */
+.single-product {
+    max-width: 1200px;
+    margin: 50px auto;
+    color: var(--color-white);
+  }
+  .single-product .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #000;
+  }
+  .single-product .col-2 {
+    flex: 1 1 45%;
+    padding-right: 3rem;
+  }
+  .single-product .col-2 img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  .single-product h2 {
+    font-size: 2rem;
+    color: #000;
+  }
+  .single-product h4 {
+    color: var(--color-secondary);
+    margin: 10px 0;
+    color: #000;
+  }
+  .single-product p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #000;
+  }
+  .single-product .button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
+    transition: background-color var(--transition-speed);
+  }
+  .single-product .button:hover {
+    background-color: var(--color-primary);
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .main-header .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .single-product .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #contact-form {
+      padding: 30px;
+    }
+  }
+  

@@ -1,0 +1,262 @@
+/* Reset and Box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #020d18;
+  --color-secondary: #155492;
+  --color-logo-first :#FF2300;
+  --color-logo-second: #0066CC;
+  --font-family: 'Poppins', sans-serif;
+  --transition-speed: 0.3s;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+  background-color: var(--color-primary);
+  overflow-x: hidden;
+  color:rgb(255, 255, 255)
+}
+
+/* Header */
+.main-header {
+  padding: 20px 0;
+  background:var(--color-primary);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo  {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo .SAV {
+  color :var(--color-logo-second)
+}
+
+.logo .best {
+  color: var(--color-logo-first);
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-header ul {
+  display: flex;
+}
+
+.main-header ul li {
+  margin-left: 20px;
+}
+
+.main-header ul li a {
+  font-size: 16px;
+  color: #fff;
+}
+
+.main-header ul li a:hover {
+  color:var(--color-logo-second);
+}
+
+/* Home Section */
+.index1 {
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+  }
+  
+  .index1 h1 {
+    font-size: 3em;
+    color:var(--color-secondary);
+  }
+  
+  .index1 p {
+    font-size: 2em;
+    color: #000;
+  }
+  
+  .cta-button {
+    background-color: var(--color-logo-second);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    transform: scale(1.05);
+    color: #020d18;
+  }
+  
+  /* Featured Movies */
+  .featured-movies {
+    padding: -20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .featured-movies h2 {
+    color:var(--color-logo-second);
+    font-size: 3rem;
+  }
+  .featured-movies p{
+    font-family: var(--font-family);
+    color: #000;
+  }
+  
+  .featured-movies .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 2rem;
+  }
+  
+  .featured-movies .movie-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .featured-movies .movie-item:hover {
+    transform: scale(1.1);
+  }
+  
+  .featured-movies .movie-item h3  {
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-family: var(--font-family);
+  }
+  .featured-movies .movie-item p{
+    font-family: var(--font-family);
+  }
+
+  
+
+  /*footr*/
+
+.footer {
+    padding: 1rem 0; 
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 0.5rem;
+    padding: 2rem 1rem;
+  }
+  
+  .footer .box-container .mainBox .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .footer .box-container .mainBox .content .SAV {
+      color :var(--color-logo-second);
+      font-size: 25px;
+    }
+    
+  .footer .box-container .mainBox .content .best {
+      color: var(--color-logo-first);
+      font-size: 25px;
+    }
+  
+  .footer .box-container .mainBox .content h1{
+    font-size: 1.5rem; 
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  .footer .box-container .mainBox p{
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+  }
+  .footer .box-container .box h3{
+    font-size: 1.2rem;
+    color: var(--white);
+    padding: 1rem 0;
+  }
+  .footer .box-container .box a{
+    display: block;
+    font-size: 1rem;
+    color: var(--white);
+    padding: 0.5rem 0;
+  }
+  .footer .box-container .box a i{
+    padding-right: .5rem;
+    color: var(--white);
+  }
+  .footer .box-container .box a:hover i{
+    padding-right: 2rem;
+  }
+  
+  .footer .share{
+    padding: 1rem 0;
+    text-align: center;
+  }
+  .footer .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: #000;
+    background: #ffffff;
+    margin: 0 0.3rem;
+    border-radius: 50%;
+  }
+  .footer .share a:hover{
+    background: #000;
+    color: #fff;
+  }
+  .footer .credit{
+    font-size: 1rem; 
+    margin-top: 1rem; 
+    padding-bottom: 2rem;
+    color: #ffffff;
+    text-align: center;
+    
+  }
+
+  /* Responsive */
+@media (max-width: 768px) {
+    .main-header .container {
+      flex-direction: column;
+    }
+  
+    .index1,
+    .featured-movies {
+      padding: 20px;
+    }
+  }
